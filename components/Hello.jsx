@@ -11,6 +11,7 @@ class Hello extends React.Component {
                 <br/>
                 <br/>
                 ...guess we're done here
+                Anything else?
             </div>)
     }
 }
