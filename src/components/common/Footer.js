@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <div>
-    Made with love by Phi Nutrition LLC
+    Made with love by Da Stookie Bradas LLC
   </div>
 );
 
