@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet'>    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
     <!-- script
    ================================================== -->
@@ -33,26 +36,51 @@
 	================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">    
 
 </head>
 
 <body id="top">
 
+    <!-- header 
+   ================================================== -->
+   <header id="header" class="row">   
+	   	<nav id="header-nav-wrap">
+			<ul class="header-main-nav">
+				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About ATA</a></li>
+				<li><a class="smoothscroll"  href="#pricing" title="pricing">Academics and Enrichment</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+			</ul>
+
+        </nav>
+		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+   	
+   </header> <!-- /header -->
+
+
    <!-- home
    ================================================== -->
-   <section id="home" data-parallax="scroll" data-image-src="images/class.png" data-natural-width=4000 data-natural-height=2000>
+   <section id="home" data-parallax="scroll" data-image-src="images/classImage.png" data-natural-width=4000 data-natural-height=2000>
 
         <div class="overlay"></div>
         <div class="home-content">        
             <div class="row contents">                     
-                <div class="home-content-center">
-                    <img src="images/Logo.png" alt="ATA Logo" class="centerHomeLogo">
-                    <br/>
-                    <h1 data-aos="fade-up">
-                        We tackle the stuff that <br/>
-                        traditional schools avoid
+                <div class="home-content-left">
+
+                    <h3>
+                        <img src="images/Logo.png" alt="ATA Logo" class="centerHomeLogo">
+                    </h3>
+
+                    <h1 style="font-weight: normal;">
+                        Alexander Twilight Academy develops passionate and authentic leaders who will change the world.
                     </h1>
+
+                    <div class="buttons">
+                        <a href="admissions.html" class="button" style="font-size:22px; font-family: lato">
+                            <strong>Apply Today</strong>
+                        </a>
+                    </div>                                         
+
                 </div>
             </div>
 
@@ -82,103 +110,247 @@
         </div>
 
     </section> <!-- end home -->  
-    <!-- about
+    <!-- Trust Marks (will contain logos when we get them...)
+    ================================================== -->
+    <!-- <section id="trustMarks">
+        <img class="trustMarkImages" src="images/icon1.png" alt="icon1">
+        <img class="trustMarkImages" src="images/icon2.png" alt="icon2">
+        <img class="trustMarkImages" src="images/icon3.png" alt="icon3">
+        <img class="trustMarkImages" src="images/icon4.png" alt="icon4">
+    </section> -->
+
+    <!-- Mission (1-Liner on what ATA is)
     ================================================== -->
     <section id="about">
         <div class="row about-intro">
-            <div class="col-six">                
-                <img style="height:100px;" align="middle" src="images/hardA.png" alt="hardA">
-                <h1 style="display:inline;">
-                    lexander Twilight Academy                
-                </h1>
-                <p class="lead" style="font-size:20pt;color: black">
-                    Develops passionate and authentic leaders who will make a difference in their communities and the larger world.
+            <div class="col-twelve">
+                <h1 class="intro-header" style="text-align: center;" data-aos="fade-up">Tuition Free - Independent - Top-Tier</h1>
+            </div>
+            <div class="col-twelve">
+                <p class="lead" style="text-align: center;" data-aos="fade-up">
+                     Alexander Twilight Academy (ATA) is a tuition-free, independent school serving 5th through 8th grade students from under-resourced backgrounds in Boston. Named after Alexander Twilight, the first Black American to graduate from college in the U.S. and the only Black American to be elected to a state legislature prior to the Civil War, ATA offers the same quality of education, or better, to its students as is provided by elite private elementary and middle schools. ATA will commence full-time academic operations in Fall 2019 with a 5th grade class.
                 </p>
-            </div>
-            <div class="col-six" style="float:right;">
-                <h1 class="intro-header">Sign Up Today</h1>
-                <div>
-                    <form action="/action_page.php">
-                        <div style="text-align:center;">
-                            <p style="font-size: 20pt; display:inline; text-align:center;">I am a</p>
-                            <select style="font-weight:bold; font-size: 22pt" name="type" class="formSelector">
-                                <option value="student">Student</option>
-                                <option value="parent">Parent</option>
-                                <option value="teacher">Teacher</option>
-                            </select>
-                        </div>
-                      <input style="font-size: 20pt; width: 100%" class="formInput" type="text" id="fname" name="firstname" placeholder="First Name">
-                      <input style="font-size: 20pt; width: 100%" class="formInput" type="email" id="email" name="email" placeholder="Email">                                          
-                      <input style="font-size: 20pt; width: 100%; border: 0; background-color: rgb(254, 226, 31)" type="submit" value="Submit">
-                    </form>
-                </div>         
-            </div>
-            </div>            
-        </div>
-
-        <div style="background-repeat: no-repeat; background-position: center; background-image: url('images/starOnly.png');">
-            <div class="row about-how">
-                <img data-aos="fade-up" src="images/studyingChild.JPG" style="opacity: 1; width:40%" alt="studyingChild">
-                <div class="col-six" style="float:right;">
-                    <p class="lead" style="font-size:20pt; color: black ">
-                        ATA is a tuition-free, independent school serving 5th through 8th grade students from under-resourced backgrounds in Boston. Named for the first Black American to graduate from college in the U.S. and the only Black American to be elected to a state legislature prior to the Civil War, Alexander Twilight academy offers the same quality of education, or better, to its students as is provided by elite private elementary and middle schools. Alexander Twilight Academy will commence full-time academic operation in Fall 2019.
-                    </p>
+            </div>  
+            <br/>                     
+            <div style="font-size: 22px" data-aos="fade-up">
+                <h2 style="text-align:center; font-weight: normal;">If We...</h2>
+                <div class="col-six">
+                    <ul>
+                        <li>Provide our students with a rigorous, engaging, and holistic education</li>
+                        <li>Build a community where relationships amongst students, faculty, and families are the cornerstone of our educational philosophy</li>
+                        <li>Make every student feel valued, cared about, and known</li>
+                        <li>Nurture students’ passions and intellectual curiosities</li>
+                    </ul>
                 </div>
-            </div> <!-- end about-how -->
-        </div>        
-    </section> <!-- end about -->  
-    <!-- Testimonials Section
+                <div class="col-six">
+                    <ul>
+                        <li>Expose students to new worlds</li>
+                        <li>Empower the development of 21st-century skills such as creativity, collaboration, communication, critical thinking, and problem-solving</li>
+                        <li>Prioritize the continued leadership development of our students by building upon their existing strengths and assets</li>
+                    </ul>
+                </div>   
+                <div class="col-twelve">
+                    <h2 style="text-align:center; font-weight: normal;">Then Our Students Will...</h2>
+                </div>  
+                <div class="col-six">
+                    <ul>
+                        <li>Be equipped with the academic and non-cognitive skills to gain access to limitless opportunities and pathways for success and to thrive at elite high schools, colleges, and in the 21st-century workforce</li>
+                        <li>Become lifelong learners, who live rich and meaningful lives</li>
+                    </ul>
+                </div>
+                <div class="col-six">
+                    <ul>
+                        <li>Feel empowered as leaders who will actively seek to make the world a better place</li>
+                        <li>Realize and fulfill their dreams and limitless potential</li>        
+                    </ul>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <!-- Enrollment Timeline (Admissions Process) (application Link) (dates-redacted) (to be image-ified)
+    ================================================== -->
+    <section id="about" style="background: #eeeeee;">
+        <div class="col-twelve">
+            <h1 class="intro-header" style="text-align: center;" data-aos="fade-up">Enrollment Timeline</h1>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!-- https://codepen.io/jasondavis/pen/fDGdK -->
+        <div style="margin: 0% 7% 0% 7%">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge warning">1</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Info Session 1 - 12/6/2018</h4>
+                            <p><small class="text-muted">Grove Hall Boston Public Library</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Here you can learn more about ATA and ask as many questions as you like. We'll be providing copies of the application and discussiong our academic philosphy and success so far.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning">2</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Info Session 2 - 12/15/2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>This info session will be provided for families who were unable to attend the previous event.</p>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger">3</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Entrance Exam</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>At a time and location to be determined, ATA will administer a written exam to assess candidates' baseline academic proficiencies.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge danger">4</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Formal Application Due</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Please submit all applications by email to AlexanderTwilightAcademy@gmail.com</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger">5</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Group Interview</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>At a time and location to be determined, select students who have applied will be invited to participate in a group interview, during which time ATA will assess their ability to collaborate in groups and effectively lead.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge danger">6</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Individual Interview</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>At a time and location to be determined, select students who have applied will be invited to participate in an individual interview, during which time ATA will assess their ability to self-articulate in a 1:1 setting with an adult.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge warning">7</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Acceptance Decisions Made</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>By this date, ATA will make final Accept/Reject/Waitlist decisions and will communicate these decisions to families.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge">8</div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">School Begins!</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Get ready for a fun and intense year of personalized learning and outstanding growth.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Ask for email  
+    ================================================== -->
+    <section id="download">
+
+            <div class="row">
+                <div class="col-full">
+                    <h1 class="intro-header" style="color: black;" data-aos="fade-up">What are you waiting for?</h1>
+                    <p class="lead" data-aos="fade-up" style="color: black;">
+                        Enrollment is closing soon and full scholarship positions are still available.
+                    </p>
+                    <div class="buttons" data-aos="fade-up">
+                        <a href="admissions.html" class="button" style="font-size:22px; background-color: rgb(254, 226, 31);">
+                            Apply Today
+                        </a>
+                    </div>                                             
+                </div>
+            </div>
+    
+        </section> <!-- Apply Today -->    
+
+    <!-- News
+    ================================================== -->
+
+    <!-- Testimonials
     ================================================== -->
     <section id="testimonials">
 
-        <div class="row">
-            <div class="col-twelve">
-                <h1 class="intro-header" data-aos="fade-up">What People are Saying.</h1>
-            </div>   		
-        </div>   	
-
-        <div class="row owl-wrap">
-
-            <div id="testimonial-slider"  data-aos="fade-up">
-
-                <div class="slides owl-carousel">
-
-                    <div>
-                        <p>
-                            This school is amazing. I couldn't have designed it better myself.
-                        </p> 
-
-                        <div class="testimonial-author">
-                                <img src="images/avatars/user-02.jpg" alt="Author image">
-                                <div class="author-info">
-                                    Steve Jobs
-                                    <span class="position">CEO, Apple.</span>
-                                </div>
-                        </div>                 
-                    </div> 
-
-                    <div>
-                        <p>
-                            I can't beleive they're making us wait until Jonny is in 5th grade! Take him now!
-                        </p>
-
-                        <div class="testimonial-author">
-                                <img src="images/avatars/user-03.jpg" alt="Author image">
-                                <div class="author-info">
-                                    John Doe
-                                    <span>Parent, Roxbury, MA.</span>
-                                </div>
-                        </div>                                         
-                    </div> 
-
-                </div> <!-- end slides -->
-
-            </div> <!-- end testimonial-slider -->         
-            
-        </div> <!-- end flex-container -->
-
-    </section> <!-- end testimonials -->
-
+            <div class="row">
+                <div class="col-twelve">
+                    <h1 class="intro-header" data-aos="fade-up">Family and Student Voices from the ATA Summer Pilot Program</h1>
+                </div>   		
+            </div>   	
+    
+            <div class="row owl-wrap">
+    
+                <div id="testimonial-slider"  data-aos="fade-up">
+    
+                    <div class="slides owl-carousel">
+    
+                        <div>
+                            <p>
+                                My dream school [is] ATA… My daughter came home every day excited about the next, while still having that structure… The staff [during the Summer Pilot Leadership Program] was wonderful and my daughter learned so much. She also got to be herself, while still following the rules of the program..
+                            </p>     
+                        </div> 
+    
+                        <div>
+                            <p>
+                                My son loved [ATA’s Summer Leadership] Pilot Program because of the academic expectation for the students and the friendly environment.  The first few weeks of the program my son said, “Mommy I love ATA.  I am finally getting the challenge that I need to get smarter.    
+                            </p>
+                        </div> 
+                        <div>
+                            <p>
+                                When [my daughter] came back from Alexander Twilight Academy’s Summer Pilot Program and started 4th grade in the fall she scored at a 7th grade reading level.  She made so many friends as well.    
+                            </p>
+                        </div> 
+                        <div>
+                            <p>
+                                I believe the Summer Pilot Program helped my child realize his potential as a student. The program supported him to believe that the sky is the limit to what he can accomplish in life and as a person.    
+                            </p>
+                        </div> 
+                        <div>
+                            <p>
+                                We really enjoyed the way [our daughter] was challenged, how she learned to solve problems, to ask for help and how she became much more engaged every day. Also, all the staff was so friendly and helpful that it was very easy to communicate and work together to help [our daughter] excel.    
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                I feel grateful that you are making this school a reality. The kids are the future and we need to provide more opportunities, love, care and hard work for a better tomorrow. Thank you.    
+                            </p>
+                        </div>
+                    </div> <!-- end slides -->
+    
+                </div> <!-- end testimonial-slider -->         
+                
+            </div> <!-- end flex-container -->
+    
+        </section> <!-- end testimonials -->
 
     <!-- footer
     ================================================== -->
@@ -186,8 +358,15 @@
 
         <div class="footer-main">
             <div class="row">  
-                <div class="col-four md-1-3 tab-full footer-info">            
+
+                <div class="col-three md-1-3 tab-full footer-info">            
+
                     <div class="footer-logo"></div>
+
+                    <p style="color: rgba(255, 255, 255, 0.75);">
+                        Alexander Twilight Academy develops passionate and authentic leaders who will change the world. 
+                    </p>
+
                     <ul class="footer-social-list">
                         <li>
                             <a href="#"><i class="fa fa-facebook-square"></i></a>
@@ -209,17 +388,37 @@
                     
                 </div> <!-- end footer-info -->
 
-                <div class="col-four md-1-3 tab-full mob-full footer-contact">
-                    <h4 style="color:white;">
-                    Boston, MA<br>
-                    02116<br>		        
-                    </h4>
+                <div class="col-three md-1-3 tab-1-2 mob-full footer-contact" style="color: rgba(255, 255, 255, 0.75);">
 
-                    <h4 style="color:white">
+                    <h4>Contact</h4>
+
+                    <p>
+                    Alexander Twilight Academy<br>
+                    Boston, MA <br>
+                    02116 US<br>		        
+                    </p>
+
+                    <p>
                     alexanderTwilightAcademy@gmail.com <br>
-                    </h4>                    
+                    Phone: TBD <br>
+                    Fax: TBD    
+                    </p>                    
 
                 </div> <!-- end footer-contact -->  
+
+                <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+
+                    <h4>Site Links</h4>
+
+                    <ul class="list-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About ATA</a></li>
+                        <li><a href="#">Academics and Enrichment</a></li>                        
+                        <li><a href="#">Admissions</a></li>
+                    </ul>	      		
+                            
+                </div> <!-- end footer-site-links --> 
+
             </div> <!-- /row -->
         </div> <!-- end footer-main -->
 
@@ -229,6 +428,10 @@
       	<div class="row">
 
       		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright ATA 2018.</span> 
+		         </div>
+
 		         <div id="go-top">
 		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
 		         </div>         
