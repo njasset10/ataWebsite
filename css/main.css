@@ -229,6 +229,12 @@ abbr {
   color: #838383;
 }
 
+.specialBox {
+  margin: 0% 20% 10% 20%;
+  border: 1px solid #252525;
+  padding: 2% 2% 2% 2%;
+
+}
 var, kbd, samp, code, pre {
   font-family: "crimson";
 }
